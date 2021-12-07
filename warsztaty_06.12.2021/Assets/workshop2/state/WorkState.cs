@@ -30,4 +30,7 @@ public class WorkState : IState
     public void Deinit() {
         stateMachine.transform.localScale = Vector3.one;
     }
+    
+    // tu może być jeszcze czange state to work e.t.c.:w
+    
 }
