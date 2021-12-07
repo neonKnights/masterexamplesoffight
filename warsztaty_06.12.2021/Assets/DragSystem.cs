@@ -10,6 +10,8 @@ public class DragSystem : MonoBehaviour
     private Transform slot;
     [SerializeField]
     private float velocity;
+    [SerializeField]
+    private TraiectoryRenderer renderer;
 
     private DragableItem item;
 
@@ -21,6 +23,12 @@ public class DragSystem : MonoBehaviour
     void Start()
     {
         
+    }
+
+    void Update() {
+        if (item != null) {
+            renderer.DrawTraiectory(slot.position, slot.rotation*new Vector3(0, 0, velocity));
+        }
     }
 
     // Update is called once per frame
