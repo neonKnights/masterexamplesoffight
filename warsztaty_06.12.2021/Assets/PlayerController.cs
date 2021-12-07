@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnShoot(InputValue inputValue)
     {
-        Debug.Log("OnFire");
+
     }
 
     private void OnLook(InputValue inputValue)
@@ -51,5 +51,4 @@ public class PlayerController : MonoBehaviour
         Vector2 value = inputValue.Get<Vector2>();
         movementDirection = new Vector3(value.x, 0, value.y);
     }
-
 }
