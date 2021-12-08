@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,5 +33,5 @@ public class WorkState : IState
     }
     
     // tu może być jeszcze czange state to work e.t.c.:w
-    
+
 }
